@@ -45,8 +45,7 @@ class CartItem extends React.Component{
                         {/* {buttons} */}
                         <img 
                             alt="increase" 
-                            // onClick={this.increaseQuatity.bind(this)} 
-                            onClick={this.increaseQuatity} 
+                            onClick={() => this.props.onIncreaseQuantity(this.props.product)} 
                             className="action-icons " 
                             src="https://cdn-icons-png.flaticon.com/128/992/992651.png"
                         />
